@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>css_img_black</title>
+    <style>
+        .imgs {
+            background: url('1.jpg');
+        }
+
+        .main_img {
+            width: 1024px;
+            height: 300px;
+            margin: 100px auto;
+            position: relative;
+        }
+
+        .mask {
+            width: 60%;
+            height: 300px;
+            filter: grayscale(100%);
+            overflow: hidden;
+            position: absolute;
+            right: 0;
+            top:0;
+            background-position-x: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_img imgs">
+        <div class="mask imgs"></div>
+    </div>
+</body>
+
+</html>
